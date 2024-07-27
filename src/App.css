@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.headerWrapper {
+  opacity: 1;
+  background-color: rgb(27, 50, 82);
+  border-bottom: 0px solid rgb(229, 231, 235);
+  box-shadow: rgba(3, 3, 3, 0.1) 2px 2px 4px;
+}
+
+.headerWrapper p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.imageContainer {
+  background-color: rgb(224, 217, 207);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  border: 0px solid rgb(229, 231, 235);
+  padding: 30px;
+}
+
+.discoverImageWrapper {
+  background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHwyfHxZb2dhJTIwfGVufDF8fHx8MTcyMTc1MzMzNXww&ixlib=rb-4.0.3&q=80&w=1080');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border-radius: 6px;
+  border: 0px solid rgb(229, 231, 235);
+  height: 250px;
+  width: 100%;
+}
+
+.filterSelect {
+  background-color: rgb(27, 50, 82);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgb(209, 213, 219);
+  color: #fff;
+  padding: 5px;
+}
+
+.searchInput {
+  background-color: rgb(27, 50, 82);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border: 1px solid rgb(209, 213, 219);
+  color: #fff;
+  width: 464px;
+  padding: 5px;
+}
