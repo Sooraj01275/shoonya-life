@@ -54,3 +54,70 @@
   width: 464px;
   padding: 5px;
 }
+
+.cardWrapper {
+  background-color: rgb(224, 217, 207);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  border: 0px solid rgb(229, 231, 235);
+  padding: 30px;
+}
+
+.paginationButton {
+  background-color: rgb(27, 50, 82);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgb(209, 213, 219);
+  color: #fff;
+  padding: 5px;
+}
+
+.paginationButtonDisabled {
+  background-color: #ccc;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border-radius: 6px;
+  cursor: default;
+  border: 1px solid rgb(209, 213, 219);
+  color: #fff;
+  padding: 5px;
+}
+
+.imgContainer {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border-radius: 6px;
+  height: 150px;
+  width: 50%;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  .imageContainer {
+    display: none;
+  }
+
+  .searchInput {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+  }
+
+  .buttonWrapper {
+    display: block;
+  }
+
+  .filterSelect {
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    color: black;
+    margin-bottom: 10px;
+  }
+}

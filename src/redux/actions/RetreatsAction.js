@@ -1,14 +1,15 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchGet } from '../../api'
+import axios from "axios";
 
 export const getRetreatsList = createAsyncThunk(
     'RetreatsAction/getRetreatsList',
     async (props, { rejectWithValue }) => {
         try {
-            const response = await fetchGet('/v1/retreats', { page: 1, limit: 5 })
-            return response
-        } catch {
-            return
+            const response = await axios.get(`https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?filter=${props.filter}&page=${props.page}&limit=${props.limit}&search=${props.search}`)
+            return response.data
+        } catch (error) {
+            return rejectWithValue([])
         }
     }
 )
